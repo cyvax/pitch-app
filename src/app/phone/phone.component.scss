@@ -1,0 +1,31 @@
+.device {
+  position: relative;
+  transform: scale(1);
+  transform-origin: 50% 0;
+  z-index: 1;
+}
+
+.iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 35px;
+  overflow-y: hidden
+}
+
+@media only screen and (max-width: 1024px) {
+  .device {
+    transform: scale(0.75);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .device {
+    transform: scale(0.66);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .device {
+    transform: scale(0.5);
+  }
+}

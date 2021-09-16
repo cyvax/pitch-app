@@ -1,0 +1,14 @@
+<ngx-slick-carousel #slickModal="slick-carousel"
+                    [config]="slideConfig"
+                    class="carousel">
+  <div *ngFor="let partenaire of partenaires" class="slide" ngxSlickItem>
+    <div class="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+      <figure class="image" style="width: 15rem;height: 15rem;">
+        <img alt="" class="is-rounded" src="{{ partenaire.image }}" style="width: 15rem;height: 15rem;">
+      </figure>
+      <div class="has-text-centered">
+        <h4 class="subtitle is-4 mt-4 mb-0 has-text-weight-semibold">{{ partenaire.name }}</h4>
+      </div>
+    </div>
+  </div>
+</ngx-slick-carousel>

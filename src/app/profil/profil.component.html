@@ -1,0 +1,16 @@
+<ngx-slick-carousel #slickModal="slick-carousel"
+                    [config]="slideConfig"
+                    class="carousel">
+  <div *ngFor="let slide of slides" class="slide" ngxSlickItem>
+    <div class="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+      <figure class="image" style="width: 15rem;height: 15rem;">
+        <img alt="" class="is-rounded" src="{{ slide.img }}" style="width: 15rem;height: 15rem;">
+      </figure>
+      <div class="has-text-centered">
+        <h4 class="subtitle is-4 mt-4 mb-0 has-text-weight-semibold">{{ slide.name }}</h4>
+        <p class="subtitle is-5 mt-1 mb-0">{{ slide.role }}</p>
+        <p class="subtitle is-6 mt-3 px-6">{{ slide.phrase }}</p>
+      </div>
+    </div>
+  </div>
+</ngx-slick-carousel>
