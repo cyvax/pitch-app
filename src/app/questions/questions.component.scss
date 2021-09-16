@@ -1,0 +1,12 @@
+.questions {
+  display: flex;
+  flex-direction: column;
+  .question_answer {
+    display: flex;
+    flex-direction: row;
+  }
+  .question_answer_invert {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
