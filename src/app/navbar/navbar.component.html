@@ -1,7 +1,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img alt="bulma-icon" height="48" src="assets/ecomanager.png" width="112">
+    <a class="navbar-item">
+      <img alt="bulma-icon" src="assets/ecomanager.png">
     </a>
 
     <a #navbarBurger (click)="toggleBurger()" aria-expanded="false" aria-label="menu" class="navbar-burger"
@@ -15,43 +15,25 @@
 
   <div #navbarMenu class="navbar-menu" id="navbarBasicExample">
     <div class="navbar-start">
-      <a class="navbar-item" routerLink="">
+      <a (click)="onClick('home')" class="navbar-item">
         Home
       </a>
 
-      <a class="navbar-item" routerLink="profiles">
-        Profiles
+      <a (click)="onClick('Questions')" class="navbar-item">
+        Questions
       </a>
 
-      <a class="navbar-item" routerLink="demo">
+      <a (click)="onClick('demo')" class="navbar-item">
         Demo
       </a>
 
-      <a class="navbar-item" routerLink="partenaires">
-        Partenaires
+      <a (click)="onClick('Equipe')" class="navbar-item">
+        Equipe
       </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div>
+      <a (click)="onClick('Partenaires')" class="navbar-item">
+        Partenaires
+      </a>
     </div>
   </div>
 </nav>

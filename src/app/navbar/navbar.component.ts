@@ -1,4 +1,5 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-navbar',
@@ -9,13 +10,17 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   @ViewChild('navbarBurger') burger!: ElementRef;
   @ViewChild('navbarMenu') menu!: ElementRef;
 
-  constructor() {
+  constructor(private viewportScroller: ViewportScroller) {
   }
 
   ngOnInit(): void {
   }
 
   ngAfterViewInit(): void {
+  }
+
+  public onClick(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
   }
 
   toggleBurger(): void {
