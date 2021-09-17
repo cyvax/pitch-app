@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-partenaires',
@@ -20,25 +21,19 @@ export class PartenairesComponent implements OnInit {
       name: "État Français"
     },
     {
-      image: "assets/partenaires/duckduckgo.png",
-      name: "DuckDuckGo"
-    },
-    {
-      image: "assets/partenaires/banque-de-france.png",
-      name: "La Banque de France"
-    },
-    {
       image: "assets/partenaires/afnic.svg",
       name: "AFNIC"
     }
   ];
+  faChevronLeft = faChevronLeft;
+  faChevronRight = faChevronRight;
   slideConfig = {
     slidesToShow: 3,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    prevArrow: '',
-    nextArrow: '',
+    prevArrow: '#left',
+    nextArrow: '#right',
     responsive: [
       {
         breakpoint: 1024,

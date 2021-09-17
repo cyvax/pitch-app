@@ -1,11 +1,20 @@
-<section class="hero is-fullwidth">
+<section class="hero is-fullwidth is-fullheight">
   <section class="hero-head">
     <app-navbar></app-navbar>
   </section>
-  <section class="hero-body">
-    <app-questions></app-questions>
+  <section class="hero-body is-align-items-start">
     <router-outlet></router-outlet>
   </section>
   <section class="hero-foot">
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>EcoManager</strong> fait avec amour
+          <fa-icon [icon]="love"></fa-icon>
+          en trop peu de temps
+          <fa-icon [icon]="clock"></fa-icon>
+        </p>
+      </div>
+    </footer>
   </section>
 </section>

@@ -10,6 +10,7 @@ import {SlickCarouselModule} from 'ngx-slick-carousel';
 import {PhoneComponent} from './phone/phone.component';
 import {IndexComponent} from './index/index.component';
 import {PartenairesComponent} from './partenaires/partenaires.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {PartenairesComponent} from './partenaires/partenaires.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

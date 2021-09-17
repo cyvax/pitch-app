@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 .slick-slider {
   width: 88%;
-  margin: auto;
   background: rgb(255, 255, 255);
 }
 
@@ -11,4 +10,8 @@ body .slick-next {
   width: 40px;
   background: grey !important;
   z-index: 100;
+}
+
+app-index {
+  width: 100vw;
 }
