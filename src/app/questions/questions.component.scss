@@ -1,12 +1,32 @@
 .questions {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   .question_answer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    .q_a{
+      display: flex;
+      border-radius: 15px;
+      margin-bottom: 5px;
+      border: solid 1px black;
+      max-width: 320px;
+      width: 50%;
+      text-align: center;
+      padding: 5px 10px;
+      vertical-align: middle;
+    }
   }
-  .question_answer_invert {
-    display: flex;
-    flex-direction: row-reverse;
-  }
+}
+.question{
+  height: 130px;
+  // background-color: orange;
+}
+.answer{
+  z-index: 1;
+  min-height: 120px;
+  transform: translateX(-15px);
+  // background-color: #54A432;
+  margin-top: 95px
 }
